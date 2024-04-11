@@ -10,9 +10,6 @@
   <name>migration</name>
   <url>http://maven.apache.org</url>
   <properties>
-    <db.username>${env.DB_USER}</db.username>
-    <db.password>${env.DB_PWD}</db.password>
-    <db.url>${env.DB_URL}</db.url>
     <java.version>22</java.version>
   </properties>
   <dependencies>
@@ -40,9 +37,12 @@
         <artifactId>flyway-maven-plugin</artifactId>
         <version>10.11.0</version>
         <configuration>
-          <url>${db.url}</url>
-          <user>${db.username}</user>
-          <password>${db.password}</password>
+          <locations>
+            <location>filesystem:src/main/migration</location>
+          </locations>
+          <url>${env.DB_URL}</url>
+          <user>${env.DB_USER}</user>
+          <password>${env.DB_PWD}</password>
         </configuration>
         <dependencies>
           <dependency>
