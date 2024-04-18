@@ -38,11 +38,14 @@
         <version>10.11.0</version>
         <configuration>
           <locations>
-            <location>filesystem:src/main/migration</location>
+            <location>filesystem:src</location>
           </locations>
           <url>${env.DB_URL}</url>
           <user>${env.DB_USER}</user>
           <password>${env.DB_PWD}</password>
+          <schemas>
+            <schema>beerroute</schema>
+          </schemas>
         </configuration>
         <dependencies>
           <dependency>
