@@ -1,8 +1,0 @@
-CREATE TABLE IF NOT EXISTS `mydb`.`Premio` (
-  `id` INT NOT NULL AUTO_INCREMENT,
-  `titulo` VARCHAR(100) NOT NULL,
-  `evento` VARCHAR(100) NOT NULL,
-  `logo` VARCHAR(45) NOT NULL,
-  `data` DATE NOT NULL,
-  PRIMARY KEY (`id`))
-ENGINE = InnoDB
