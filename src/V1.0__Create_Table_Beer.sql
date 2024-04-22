@@ -11,5 +11,6 @@ CREATE TABLE IF NOT EXISTS `beerroute`.`beer` (
   `color1` CHAR(6) NOT NULL,
   `color2` CHAR(6) NOT NULL,
   `volume` DECIMAL NOT NULL,
-  PRIMARY KEY (`id`))
-ENGINE = InnoDB
+  `brewery_id` INT NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE = InnoDB;
