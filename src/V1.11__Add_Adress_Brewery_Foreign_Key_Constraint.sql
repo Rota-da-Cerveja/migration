@@ -1,5 +1,5 @@
-ALTER TABLE `beerroute`.`address`
-ADD CONSTRAINT `fk_address_brewery1`
+ALTER TABLE `beerroute`.`adress`
+ADD CONSTRAINT `fk_adress_brewery1`
 FOREIGN KEY (`brewery_id`)
 REFERENCES `beerroute`.`brewery` (`id`)
 ON DELETE NO ACTION
