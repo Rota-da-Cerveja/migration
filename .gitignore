@@ -33,5 +33,4 @@ build/
 .vscode/
 env.sh
 registros.txt
-target
 
