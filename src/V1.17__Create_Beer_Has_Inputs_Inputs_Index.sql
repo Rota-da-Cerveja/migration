@@ -1,0 +1,1 @@
+CREATE INDEX `fk_beer_has_inputs_inputs1_idx` ON `beerroute`.`beer_has_inputs` (`inputs_id` ASC);
