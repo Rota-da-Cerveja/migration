@@ -1,1 +1,0 @@
-CREATE INDEX `fk_assessment_has_beer_assessment1_idx` ON `beerroute`.`assessment_has_beer` (`assessment_id` ASC);

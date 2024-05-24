@@ -1,6 +1,7 @@
-CREATE TABLE IF NOT EXISTS `beerroute`.`scent` (
+CREATE TABLE IF NOT EXISTS `beerroute`.`inputs` (
   `id` INT NOT NULL AUTO_INCREMENT,
-  `name` VARCHAR(100) NOT NULL,
+  `nome` VARCHAR(100) NOT NULL,
+  `is_allergic` TINYINT NOT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb4
